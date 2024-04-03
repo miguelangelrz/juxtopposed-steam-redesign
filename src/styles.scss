@@ -1,1 +1,50 @@
 /* You can add global styles to this file, and also import other style files */
+
+$primary: #66c0f4;
+$secondary: #4b619b;
+$accent-green: #a1cd44;
+$accent-yellow: #c1b15f;
+$accent-red: #cd5444;
+
+$background-main: #0e141b;
+$background-highlight: #1e2329;
+$background-hover: #313843;
+$background-secondary: #14344b;
+$background-tertiary: #212b45;
+
+$background-main-50: rgba($background-main, 0.5); // 50% opacity
+$background-main-20: rgba($background-main, 0.2); // 20% opacity
+
+$text-main: #f3f3f3;
+$text-dim: #76808c;
+
+$font-family: 'Montserrat', sans-serif;
+
+$font-weight-regular: 400;
+$font-weight-bold: 700;
+
+$font-size-large: 18px;
+$font-size-medium: 22px;
+$font-size-small: 18px;
+
+$base-unit: 8px;
+
+$spacing: (
+    'xxs': calc(#{$base-unit} * 0.5),
+    'xs': calc(#{$base-unit} * 1),
+    'sm': calc(#{$base-unit} * 1.5),
+    'md': calc(#{$base-unit} * 2),
+    'lg': calc(#{$base-unit} * 3),
+    'xl': calc(#{$base-unit} * 4),
+    'xxl': calc(#{$base-unit} * 6),
+);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: $text-main;
+    font-family: $font-family;
+    font-weight: $font-weight-bold;
+    font-size: $font-size-medium;
+}
