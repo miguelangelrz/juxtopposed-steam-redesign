@@ -3,10 +3,31 @@
 @import '../../../../styles';
 
 .navbar {
-    background-color: $background-main;
-    height: 50px;
-    width: 100%;
+  background-color: $background-main;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: map.get($spacing, 'xxl');
+  padding: map.get($spacing, 'md');
+}
+
+.navigation-buttons {
+  display: flex;
+  gap: map.get($spacing, 'xs');
+
+  & > button {
+    background: none;
+    border: none;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
     display: flex;
     align-items: center;
-    gap: map.get($spacing, 'md');
+    justify-content: center;
+
+    &:hover {
+
+    }
+  }
 }

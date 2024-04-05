@@ -1,6 +1,8 @@
 <a
-    routerLink="{{ path }}"
-    routerLinkActive="active"
-    ariaCurrentWhenActive="page"
-    >{{ title | uppercase }}</a
+  routerLink="{{ path }}"
+  routerLinkActive="active"
+  ariaCurrentWhenActive="page"
+  [class.selected]="isActive"
 >
+  {{ title | uppercase }}
+</a>

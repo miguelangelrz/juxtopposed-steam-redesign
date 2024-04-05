@@ -2,4 +2,9 @@
 
 a {
   font-size: $font-size-small;
+  text-decoration: none;
+
+  &.selected {
+    color: $primary;
+  }
 }

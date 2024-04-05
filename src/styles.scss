@@ -30,21 +30,25 @@ $font-size-small: 18px;
 $base-unit: 8px;
 
 $spacing: (
-    'xxs': calc(#{$base-unit} * 0.5),
-    'xs': calc(#{$base-unit} * 1),
-    'sm': calc(#{$base-unit} * 1.5),
-    'md': calc(#{$base-unit} * 2),
-    'lg': calc(#{$base-unit} * 3),
-    'xl': calc(#{$base-unit} * 4),
-    'xxl': calc(#{$base-unit} * 6),
+  'xxs': calc(#{$base-unit} * 0.5),
+  'xs': calc(#{$base-unit} * 1),
+  'sm': calc(#{$base-unit} * 1.5),
+  'md': calc(#{$base-unit} * 2),
+  'lg': calc(#{$base-unit} * 3),
+  'xl': calc(#{$base-unit} * 4),
+  'xxl': calc(#{$base-unit} * 6),
 );
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: $text-main;
-    font-family: $font-family;
-    font-weight: $font-weight-bold;
-    font-size: $font-size-medium;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: $text-main;
+  font-family: $font-family;
+  font-weight: $font-weight-bold;
+  font-size: $font-size-medium;
+}
+
+body {
+  background-color: $background-secondary;
 }

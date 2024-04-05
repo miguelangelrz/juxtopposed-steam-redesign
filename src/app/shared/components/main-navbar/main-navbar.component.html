@@ -1,5 +1,12 @@
 <div class="navbar">
-    <button><</button>
-    <button>></button>
-    <app-main-navigation-item [title]="'Store'" [path]="'detail/12'"/>
+  <div class="navigation-buttons">
+    <button><img ngSrc="assets/keyboard_arrow_left.svg" width="7" height="12" alt="left" /></button>
+    <button><img ngSrc="assets/keyboard_arrow_right.svg" width="7" height="12" alt="right" /></button>
+  </div>
+  <img ngSrc="assets/steam_logo.svg" height="20" width="100" alt="Steam logo">
+  <app-main-navigation-item [title]="'Store'" [path]="'store'" />
+  <app-main-navigation-item [title]="'Community'" [path]="'community'" />
+  <app-main-navigation-item [title]="'Username'" [path]="'user'" />
+  <app-main-navigation-item [title]="'Library'" [path]="'library'" />
+  <app-main-navigation-item [title]="'Downloads'" [path]="'downloads'" />
 </div>
