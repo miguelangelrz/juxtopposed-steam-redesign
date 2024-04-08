@@ -1,0 +1,45 @@
+@use "sass:map";
+
+@import "../../../styles";
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: map.get($spacing, "xs");
+}
+
+.train {
+  display: flex;
+  gap: map.get($spacing, "xs");
+  align-items: center;
+
+  &.top {
+    align-items: flex-start;
+  }
+}
+
+.small-heading {
+  font-size: $font-size-small;
+  font-weight: $font-weight-bold;
+}
+
+.medium-body {
+  font-size: $body-font-size-medium;
+  font-weight: $font-weight-regular;
+}
+
+.large-body {
+  font-size: $body-font-size-large;
+  font-weight: $font-weight-regular;
+}
+
+.highlighted {
+  color: $primary;
+}
+
+.ellipse {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background-color: $primary;
+}

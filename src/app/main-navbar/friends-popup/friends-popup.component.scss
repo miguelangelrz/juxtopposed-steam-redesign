@@ -1,0 +1,97 @@
+@use "sass:map";
+
+@import "../../../styles";
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: map.get($spacing, "xs");
+}
+
+.train {
+  display: flex;
+  gap: map.get($spacing, "xs");
+  align-items: center;
+}
+
+.small-heading {
+  font-size: $font-size-small;
+  font-weight: $font-weight-bold;
+}
+
+.medium-body {
+  font-size: $body-font-size-medium;
+  font-weight: $font-weight-regular;
+}
+
+.highlighted {
+  color: $primary;
+}
+
+.ellipse {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background-color: $primary;
+}
+
+.container {
+  background: $background-highlight linear-gradient(
+      175deg,
+      rgba($secondary, 0.5) 0%,
+      rgba($background-highlight, 1) 50%
+  );
+  padding: map.get($spacing, "md");
+  display: flex;
+  flex-direction: column;
+  width: 330px;
+  border-radius: 5px;
+  position: relative;
+}
+
+header {
+  margin-bottom: map.get($spacing, "md");
+}
+
+h6 {
+  font-size: $font-size-small;
+}
+
+.tab-switcher {
+  display: flex;
+  justify-content: space-between;
+  margin-top: map.get($spacing, "xl");
+
+  button {
+    border: none;
+    background-color: $background-main;
+    color: $text-dim;
+    font-size: $body-font-size-large;
+    font-weight: $font-weight-regular;
+    width: 49%;
+    padding: map.get($spacing, "xs");
+    cursor: pointer;
+
+    &.isActive {
+      background-color: $background-hover;
+      color: $text-main;
+    }
+  }
+}
+
+.content {
+  background-color: $background-hover;
+  gap: map.get($spacing, "xl");
+  padding: map.get($spacing, "md");
+  border-radius: 0 3px 3px 3px;
+}
+
+.section {
+  gap: map.get($spacing, "md");
+}
+
+.separation {
+  color: $text-dim;
+  font-size: $body-font-size-medium;
+  font-weight: $font-weight-regular;
+}

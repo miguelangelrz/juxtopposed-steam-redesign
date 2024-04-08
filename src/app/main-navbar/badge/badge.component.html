@@ -1,0 +1,8 @@
+<button #popupToggleButton class="badge" (click)="togglePopup()">
+  <img ngSrc="/src/assets/notifications_icon.svg" width="15" height="20" alt="Notification">
+  <div class="dot-badge">1</div>
+</button>
+
+<div class="popup" *ngIf="showPopup" [style.left.px]="popupLeft" [style.top.px]="popupTop">
+  <ng-content />
+</div>

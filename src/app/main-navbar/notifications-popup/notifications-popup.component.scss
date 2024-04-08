@@ -1,0 +1,61 @@
+@use "sass:map";
+
+@import "../../../styles";
+
+.container {
+  background-color: $background-highlight;
+  padding: map.get($spacing, "md");
+  display: flex;
+  flex-direction: column;
+  width: 330px;
+  border-radius: 5px;
+}
+
+header {
+  margin-bottom: map.get($spacing, "md");
+}
+
+h6 {
+  font-size: $font-size-small;
+}
+
+.message-container {
+  background-color: $background-main-50;
+  border-radius: 3px;
+  padding: map.get($spacing, "xs");
+
+  display: flex;
+  flex-direction: column;
+  gap: map.get($spacing, "xs");
+
+  .source {
+    display: flex;
+    align-items: center;
+  }
+
+  .source > span {
+    font-size: $body-font-size-small;
+    color: $text-dim;
+    margin-left: map.get($spacing, "xxs");
+    margin-right: auto;
+  }
+
+  .source > .ellipse {
+    background-color: $primary;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+  }
+
+  .content {
+    font-size: $body-font-size-medium;
+    font-weight: $font-weight-regular;
+    color: $text-main;
+
+    .highlighted {
+      font-size: $body-font-size-medium;
+      font-weight: $font-weight-regular;
+      color: $primary;
+    }
+  }
+}

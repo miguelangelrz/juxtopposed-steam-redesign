@@ -1,15 +1,20 @@
 @use 'sass:map';
 
-@import '../../../../styles';
+@import '../../styles';
 
-.navbar {
+.navbar, .navbar > nav {
   background-color: $background-main;
-  height: 50px;
   width: 100%;
   display: flex;
   align-items: center;
+  gap: map.get($spacing, 'xs');
+  padding: map.get($spacing, 'sm') map.get($spacing, 'md');
+}
+
+.navbar > nav {
   gap: map.get($spacing, 'xxl');
-  padding: map.get($spacing, 'md');
+  margin-right: auto;
+  padding: 0;
 }
 
 .navigation-buttons {
