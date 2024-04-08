@@ -1,0 +1,33 @@
+<header class="navbar">
+  <a
+    *ngFor="let item of menuOptions"
+    [routerLink]="['/store', item.route]"
+    class="menu-item"
+    [class.isActive]="activeRoute === item.route"
+    (click)="toggleView(item.route)"
+  >
+    {{ item.title }}
+  </a>
+
+  <div class="input-container">
+    <input class="search-bar" placeholder="Search..." />
+    <img ngSrc="/assets/search_icon.svg" width="20" height="20" alt="Search" class="input-icon" />
+  </div>
+
+  <a
+    [routerLink]="['/store/wishlist']"
+    class="menu-item"
+    [class.isActive]="activeRoute === 'wishlist'"
+    (click)="toggleView('wishlist')"
+  >
+    Wishlist
+  </a>
+  <a
+    [routerLink]="['/store/cart']"
+    class="menu-item"
+    [class.isActive]="activeRoute === 'cart'"
+    (click)="toggleView('cart')"
+  >
+    Cart
+  </a>
+</header>

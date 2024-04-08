@@ -1,0 +1,46 @@
+@use "sass:map";
+@import "../../../styles";
+
+.navbar {
+  background-color: $background-tertiary;
+  padding: map.get($spacing, "xxs") map.get($spacing, "xs");
+  display: flex;
+  gap: map.get($spacing, "xs")
+}
+
+.menu-item {
+  text-decoration: none;
+  font-size: $body-font-size-large;
+  font-weight: $font-weight-regular;
+  padding: map.get($spacing, "xs") map.get($spacing, "xl");
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &.isActive {
+    background-color: $secondary;
+  }
+}
+
+.input-container {
+  position: relative;
+  margin: 0 auto;
+}
+
+.input-icon {
+  position: absolute;
+  top: 50%;
+  right: map.get($spacing, "sm");
+  transform: translateY(-50%);
+}
+
+.search-bar {
+  border: none;
+  padding: map.get($spacing, "sm") map.get($spacing, "md");
+  font-size: $body-font-size-medium;
+  font-weight: $font-weight-regular;
+  color: $secondary;
+  background-color: $background-main-20;
+  width: 500px;
+}
